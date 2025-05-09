@@ -100,3 +100,18 @@ If you encounter API connection issues:
 ## Examples
 
 Check the /examples directory for sample code showing how to use each API.
+
+## Working Reference Setup
+
+Commit `c3604600bd7b6f3a2c2fd38a6e941d4ed7807d96` contains a fully working configuration with all economic APIs connected (FRED, BEA, Census, BLS, ECB, NY Fed, Treasury). Use this as a reference point by running:
+
+```bash
+git checkout c3604600bd7b6f3a2c2fd38a6e941d4ed7807d96
+```
+
+Or restore these files:
+- server.js
+- src/setupProxy.js
+- src/services/apiService.js
+- .devcontainer/devcontainer.json
+
