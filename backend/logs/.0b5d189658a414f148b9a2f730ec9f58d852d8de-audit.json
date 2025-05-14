@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "c:\\Users\\simba\\Desktop\\Copy\\web\\backend\\logs\\.0b5d189658a414f148b9a2f730ec9f58d852d8de-audit.json",
+    "files": [
+        {
+            "date": 1747164034226,
+            "name": "c:\\Users\\simba\\Desktop\\Copy\\web\\backend\\logs\\combined-2025-05-13.log",
+            "hash": "9246f95e91c26f0648e00e48ab81570ca7849b9ed64510cbddd708cac5e4c1e4"
+        },
+        {
+            "date": 1747211132637,
+            "name": "c:\\Users\\simba\\Desktop\\Copy\\web\\backend\\logs\\combined-2025-05-14.log",
+            "hash": "e513c7672eb2ff4c2bdeb33d8176ab11bbb9af84cdc1337df5a8b04eb478a886"
+        }
+    ],
+    "hashType": "sha256"
+}

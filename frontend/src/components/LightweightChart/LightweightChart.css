@@ -1,0 +1,97 @@
+.lightweight-chart-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: var(--bg-color);
+  padding-bottom: 10px; /* Add padding to the bottom of the container */
+}
+
+.chart-title {
+  padding: 12px 16px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px; /* Add padding at the bottom for labels */
+  margin-bottom: 10px; /* Add margin to separate from legend */
+}
+
+.chart-toolbar {
+  display: flex;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.toolbar-button {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background-color 0.2s;
+}
+
+.toolbar-button:hover {
+  background-color: var(--hover-color);
+}
+
+.chart-legend {
+  padding: 8px 16px;
+  font-size: 12px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
+}
+
+.legend-date {
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.legend-value {
+  font-weight: 600;
+}
+
+/* Theme variables */
+:root {
+  --bg-color: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+  --hover-color: #f0f0f0;
+}
+
+/* Dark mode variables - apply to both data-theme and .dark class for compatibility */
+[data-theme='dark'],
+.dark .lightweight-chart-container,
+.lightweight-chart-container[data-theme='dark'] {
+  --bg-color: #1e1e1e;
+  --bg-secondary: #2d2d2d;
+  --text-color: #e0e0e0;
+  --border-color: #3e3e3e;
+  --hover-color: #3a3a3a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart-toolbar {
+    flex-wrap: wrap;
+  }
+  
+  .toolbar-button {
+    margin-bottom: 4px;
+  }
+}

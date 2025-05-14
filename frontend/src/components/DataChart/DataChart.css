@@ -1,0 +1,310 @@
+/* DataChart component styles - FRED-style appearance */
+.dataset-color-indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* FRED-style chart container */
+.fred-chart-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dark .fred-chart-container {
+  background-color: #1e1e1e;
+  border-color: #2a2e39;
+}
+
+/* FRED-style recession shading */
+.fred-recession-area {
+  fill: rgba(225, 225, 225, 0.5);
+  stroke: none;
+}
+
+.dark .fred-recession-area {
+  fill: rgba(50, 50, 50, 0.5);
+}
+
+/* FRED-style time period buttons */
+.fred-time-buttons {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.fred-time-button {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fred-time-button.active {
+  background-color: #2a52be;
+  color: white;
+  border-color: #2a52be;
+}
+
+.dark .fred-time-button {
+  background-color: #2a2e39;
+  border-color: #4a4e59;
+  color: #d1d5db;
+}
+
+.dark .fred-time-button.active {
+  background-color: #3a62ce;
+  color: white;
+  border-color: #3a62ce;
+}
+
+/* FRED-style tooltip */
+.fred-tooltip {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+
+.dark .fred-tooltip {
+  background-color: #1e222d;
+  border-color: #2a2e39;
+  color: #d1d5db;
+}
+
+.fred-tooltip-header {
+  font-weight: bold;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 4px;
+}
+
+.dark .fred-tooltip-header {
+  border-color: #2a2e39;
+}
+
+.fred-tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+/* FRED-style data table */
+.fred-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.fred-data-table th, .fred-data-table td {
+  padding: 6px 8px;
+  text-align: right;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dark .fred-data-table th, .dark .fred-data-table td {
+  border-color: #2a2e39;
+}
+
+.fred-data-table th {
+  font-weight: 600;
+  background-color: #f9fafb;
+}
+
+.dark .fred-data-table th {
+  background-color: #2a2e39;
+}
+
+/* FRED-style units selector */
+.fred-units-selector {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.fred-units-selector select {
+  padding: 4px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.dark .fred-units-selector select {
+  background-color: #2a2e39;
+  border-color: #4a4e59;
+  color: #d1d5db;
+}
+
+/* Fullscreen mode styles */
+:fullscreen {
+  background-color: white;
+}
+
+:fullscreen .chart-fullscreen-controls {
+  display: block !important;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+:fullscreen .chart-fullscreen-controls:hover {
+  opacity: 1;
+}
+
+/* For webkit browsers */
+:-webkit-full-screen {
+  background-color: white;
+}
+
+:-webkit-full-screen .chart-fullscreen-controls {
+  display: block !important;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+:-webkit-full-screen .chart-fullscreen-controls:hover {
+  opacity: 1;
+}
+
+/* Dark mode support */
+.dark :fullscreen {
+  background-color: #1e1e1e;
+}
+
+.dark :-webkit-full-screen {
+  background-color: #1e1e1e;
+}
+
+/* Dataset color classes */
+.dataset-color-sp500 { background-color: #8884d8; }
+.dataset-color-nasdaq { background-color: #82ca9d; }
+.dataset-color-djia { background-color: #ffc658; }
+.dataset-color-treasury10y { background-color: #ff8042; }
+.dataset-color-treasury2y { background-color: #ff5722; }
+.dataset-color-gold { background-color: #ffbb28; }
+.dataset-color-bitcoin { background-color: #ff8042; }
+.dataset-color-vix { background-color: #ff0000; }
+.dataset-color-unemployment { background-color: #9c27b0; }
+.dataset-color-cpi { background-color: #2196f3; }
+.dataset-color-gdp { background-color: #4caf50; }
+.dataset-color-retailSales { background-color: #795548; }
+.dataset-color-housingStarts { background-color: #607d8b; }
+.dataset-color-industrialProduction { background-color: #ff9800; }
+
+/* Dataset color dot */
+.dataset-color-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Color indicator for dataset selection */
+.dataset-color-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Dynamic color indicator - to be used with inline style for background-color only */
+.dynamic-color-indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Metric color indicator - used for dataset selection */
+.metric-color-indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Dataset color classes for each available dataset */
+.dataset-color {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Metric color indicator - used for dataset selection */
+.metric-color-indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Dataset color classes for each available dataset */
+.dataset-color {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Color indicator for dataset selection */
+.color-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+}
+
+/* Dynamic dataset colors */
+.dataset-color-dot-custom-1 { background-color: #8884d8; }
+.dataset-color-dot-custom-2 { background-color: #82ca9d; }
+.dataset-color-dot-custom-3 { background-color: #ffc658; }
+.dataset-color-dot-custom-4 { background-color: #ff8042; }
+.dataset-color-dot-custom-5 { background-color: #ff5722; }
+.dataset-color-dot-custom-6 { background-color: #ffbb28; }
+.dataset-color-dot-custom-7 { background-color: #ff0000; }
+.dataset-color-dot-custom-8 { background-color: #9c27b0; }
+.dataset-color-dot-custom-9 { background-color: #2196f3; }
+.dataset-color-dot-custom-10 { background-color: #4caf50; }
+.dataset-color-dot-custom-11 { background-color: #795548; }
+.dataset-color-dot-custom-12 { background-color: #607d8b; }
+.dataset-color-dot-custom-13 { background-color: #ff9800; }
+
+/* For any other custom colors */
+.dataset-color-dot-sp500 { background-color: #8884d8; }
+.dataset-color-dot-nasdaq { background-color: #82ca9d; }
+.dataset-color-dot-djia { background-color: #ffc658; }
+.dataset-color-dot-treasury10y { background-color: #ff8042; }
+.dataset-color-dot-treasury2y { background-color: #ff5722; }
+.dataset-color-dot-gold { background-color: #ffbb28; }
+.dataset-color-dot-bitcoin { background-color: #ff8042; }
+.dataset-color-dot-vix { background-color: #ff0000; }
+.dataset-color-dot-unemployment { background-color: #9c27b0; }
+.dataset-color-dot-cpi { background-color: #2196f3; }
+.dataset-color-dot-gdp { background-color: #4caf50; }
+.dataset-color-dot-retailSales { background-color: #795548; }
+.dataset-color-dot-housingStarts { background-color: #607d8b; }
+.dataset-color-dot-industrialProduction { background-color: #ff9800; }
+
+/* Dataset indicator for selection lists - replaces inline styles */
+.dataset-indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+  background-color: var(--indicator-color);
+}

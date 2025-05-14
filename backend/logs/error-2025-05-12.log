@@ -1,0 +1,4 @@
+{"error":{},"level":"error","message":"Error fetching FRED data: Failed to fetch FRED series GDP: Request failed with status code 400","service":"economic-data-api","timestamp":"2025-05-12 18:17:51"}
+{"error":{},"level":"error","message":"Error fetching FRED data: Failed to fetch FRED series GDP: Request failed with status code 400","service":"economic-data-api","timestamp":"2025-05-12 18:21:47"}
+{"error":{},"level":"error","message":"Error fetching BLS data: Failed to fetch BLS data: BLS API error: The key:your_bls_api_key provided by the User is invalid. Please provide a proper key for the operation to be successful","service":"economic-data-api","timestamp":"2025-05-12 18:34:19"}
+{"error":{},"level":"error","message":"Error fetching FRED data: Failed to fetch FRED series GDP: Request failed with status code 400","service":"economic-data-api","timestamp":"2025-05-12 18:57:29"}

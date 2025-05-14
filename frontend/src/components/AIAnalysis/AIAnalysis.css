@@ -1,0 +1,47 @@
+/* AIAnalysis component styles */
+
+/* Progress bar styles */
+/* Common progress bar styles */
+.progress-bar-buy,
+.progress-bar-sell,
+.progress-bar-black-swan {
+  height: 0.5rem;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+/* Specific colors for each type */
+.progress-bar-buy {
+  background-color: #4CAF50; /* bg-green-500 */
+}
+
+.progress-bar-sell {
+  background-color: #F44336; /* bg-red-500 */
+}
+
+.progress-bar-black-swan {
+  background-color: #9C27B0; /* bg-purple-500 */
+}
+
+/* Width based on data-progress attribute */
+[data-progress="0"] { width: 0%; }
+[data-progress="5"] { width: 5%; }
+[data-progress="10"] { width: 10%; }
+[data-progress="15"] { width: 15%; }
+[data-progress="20"] { width: 20%; }
+[data-progress="25"] { width: 25%; }
+[data-progress="30"] { width: 30%; }
+[data-progress="35"] { width: 35%; }
+[data-progress="40"] { width: 40%; }
+[data-progress="45"] { width: 45%; }
+[data-progress="50"] { width: 50%; }
+[data-progress="55"] { width: 55%; }
+[data-progress="60"] { width: 60%; }
+[data-progress="65"] { width: 65%; }
+[data-progress="70"] { width: 70%; }
+[data-progress="75"] { width: 75%; }
+[data-progress="80"] { width: 80%; }
+[data-progress="85"] { width: 85%; }
+[data-progress="90"] { width: 90%; }
+[data-progress="95"] { width: 95%; }
+[data-progress="100"] { width: 100%; }

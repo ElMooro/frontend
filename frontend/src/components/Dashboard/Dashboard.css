@@ -1,0 +1,215 @@
+/* FRED-like chart styles */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke-opacity: 0.2;
+}
+
+.recharts-tooltip-cursor {
+  stroke-dasharray: 5 5;
+  stroke-width: 1;
+}
+
+.recharts-default-tooltip {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  font-size: 12px;
+  background-color: var(--light-card) !important;
+  border-color: var(--light-border) !important;
+  color: var(--light-text) !important;
+}
+
+.dark .recharts-default-tooltip {
+  background-color: var(--dark-card) !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.recharts-tooltip-label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.recharts-tooltip-item-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recharts-tooltip-item {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.recharts-tooltip-item-name {
+  margin-right: 8px;
+}
+
+.recharts-tooltip-item-value {
+  font-weight: 600;
+}
+
+/* Confidence bar styles */
+.confidence-bar {
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  justify-content: center;
+  transition: width 0.3s ease;
+}
+
+.confidence-bar-buy {
+  background-color: var(--light-success);
+}
+
+.dark .confidence-bar-buy {
+  background-color: var(--dark-success);
+}
+
+.confidence-bar-sell {
+  background-color: var(--light-danger);
+}
+
+.dark .confidence-bar-sell {
+  background-color: var(--dark-danger);
+}
+
+.confidence-bar-neutral {
+  background-color: var(--light-warning);
+}
+
+.dark .confidence-bar-neutral {
+  background-color: var(--dark-warning);
+}
+
+/* Width classes for confidence bars */
+.confidence-width-0 { width: 0%; }
+.confidence-width-1 { width: 1%; }
+.confidence-width-2 { width: 2%; }
+.confidence-width-3 { width: 3%; }
+.confidence-width-4 { width: 4%; }
+.confidence-width-5 { width: 5%; }
+.confidence-width-6 { width: 6%; }
+.confidence-width-7 { width: 7%; }
+.confidence-width-8 { width: 8%; }
+.confidence-width-9 { width: 9%; }
+.confidence-width-10 { width: 10%; }
+.confidence-width-11 { width: 11%; }
+.confidence-width-12 { width: 12%; }
+.confidence-width-13 { width: 13%; }
+.confidence-width-14 { width: 14%; }
+.confidence-width-15 { width: 15%; }
+.confidence-width-16 { width: 16%; }
+.confidence-width-17 { width: 17%; }
+.confidence-width-18 { width: 18%; }
+.confidence-width-19 { width: 19%; }
+.confidence-width-20 { width: 20%; }
+.confidence-width-21 { width: 21%; }
+.confidence-width-22 { width: 22%; }
+.confidence-width-23 { width: 23%; }
+.confidence-width-24 { width: 24%; }
+.confidence-width-25 { width: 25%; }
+.confidence-width-26 { width: 26%; }
+.confidence-width-27 { width: 27%; }
+.confidence-width-28 { width: 28%; }
+.confidence-width-29 { width: 29%; }
+.confidence-width-30 { width: 30%; }
+.confidence-width-31 { width: 31%; }
+.confidence-width-32 { width: 32%; }
+.confidence-width-33 { width: 33%; }
+.confidence-width-34 { width: 34%; }
+.confidence-width-35 { width: 35%; }
+.confidence-width-36 { width: 36%; }
+.confidence-width-37 { width: 37%; }
+.confidence-width-38 { width: 38%; }
+.confidence-width-39 { width: 39%; }
+.confidence-width-40 { width: 40%; }
+.confidence-width-41 { width: 41%; }
+.confidence-width-42 { width: 42%; }
+.confidence-width-43 { width: 43%; }
+.confidence-width-44 { width: 44%; }
+.confidence-width-45 { width: 45%; }
+.confidence-width-46 { width: 46%; }
+.confidence-width-47 { width: 47%; }
+.confidence-width-48 { width: 48%; }
+.confidence-width-49 { width: 49%; }
+.confidence-width-50 { width: 50%; }
+.confidence-width-51 { width: 51%; }
+.confidence-width-52 { width: 52%; }
+.confidence-width-53 { width: 53%; }
+.confidence-width-54 { width: 54%; }
+.confidence-width-55 { width: 55%; }
+.confidence-width-56 { width: 56%; }
+.confidence-width-57 { width: 57%; }
+.confidence-width-58 { width: 58%; }
+.confidence-width-59 { width: 59%; }
+.confidence-width-60 { width: 60%; }
+.confidence-width-61 { width: 61%; }
+.confidence-width-62 { width: 62%; }
+.confidence-width-63 { width: 63%; }
+.confidence-width-64 { width: 64%; }
+.confidence-width-65 { width: 65%; }
+.confidence-width-66 { width: 66%; }
+.confidence-width-67 { width: 67%; }
+.confidence-width-68 { width: 68%; }
+.confidence-width-69 { width: 69%; }
+.confidence-width-70 { width: 70%; }
+.confidence-width-71 { width: 71%; }
+.confidence-width-72 { width: 72%; }
+.confidence-width-73 { width: 73%; }
+.confidence-width-74 { width: 74%; }
+.confidence-width-75 { width: 75%; }
+.confidence-width-76 { width: 76%; }
+.confidence-width-77 { width: 77%; }
+.confidence-width-78 { width: 78%; }
+.confidence-width-79 { width: 79%; }
+.confidence-width-80 { width: 80%; }
+.confidence-width-81 { width: 81%; }
+.confidence-width-82 { width: 82%; }
+.confidence-width-83 { width: 83%; }
+.confidence-width-84 { width: 84%; }
+.confidence-width-85 { width: 85%; }
+.confidence-width-86 { width: 86%; }
+.confidence-width-87 { width: 87%; }
+.confidence-width-88 { width: 88%; }
+.confidence-width-89 { width: 89%; }
+.confidence-width-90 { width: 90%; }
+.confidence-width-91 { width: 91%; }
+.confidence-width-92 { width: 92%; }
+.confidence-width-93 { width: 93%; }
+.confidence-width-94 { width: 94%; }
+.confidence-width-95 { width: 95%; }
+.confidence-width-96 { width: 96%; }
+.confidence-width-97 { width: 97%; }
+.confidence-width-98 { width: 98%; }
+.confidence-width-99 { width: 99%; }
+.confidence-width-100 { width: 100%; }
+
+/* Metric weight styles */
+.metric-weight {
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  justify-content: center;
+}
+
+.metric-weight-first {
+  margin-left: 0;
+}
+
+.metric-weight-other {
+  margin-left: 2px;
+}
+
+/* Chart label styles */
+.chart-label-middle {
+  text-anchor: middle;
+}

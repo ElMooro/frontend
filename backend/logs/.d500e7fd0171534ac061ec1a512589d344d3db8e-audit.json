@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\simba\\Documents\\web\\backend\\logs\\.d500e7fd0171534ac061ec1a512589d344d3db8e-audit.json",
+    "files": [
+        {
+            "date": 1747255699027,
+            "name": "C:\\Users\\simba\\Documents\\web\\backend\\logs\\error-2025-05-14.log",
+            "hash": "5bfd3fd902e7dfd5fef292f5f8a89c971fa3e1fe2b281ce96e0c70d8295c5ee7"
+        }
+    ],
+    "hashType": "sha256"
+}
